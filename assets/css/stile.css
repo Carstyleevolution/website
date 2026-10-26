@@ -109,6 +109,17 @@ li { margin-bottom: 0.4em; }
 .pulsante--whatsapp { background: var(--verde-whatsapp); border-color: var(--verde-whatsapp); }
 .pulsante--whatsapp:hover { background: #15703b; border-color: #15703b; }
 
+/* ---------- Banner di prova ---------- */
+
+.banner-prova {
+  padding: 10px 0;
+  background: var(--rosso);
+  color: var(--colore-testo);
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
 /* ---------- Testata e menu ---------- */
 
 .testata { background: var(--colore-sfondo); }
