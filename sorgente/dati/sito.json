@@ -1,0 +1,82 @@
+{
+  "site_url": "https://carstyleevolution.it",
+
+  "business": {
+    "name": "Car Style Evolution",
+    "tagline": "Car wrapping, PPF e oscuramento vetri a Cappelle dei Marsi",
+    "phone_display": "353 456 3000",
+    "phone_link": "+393534563000",
+    "whatsapp_number": "393534563000",
+    "email": "carstyle_evolution@gmail.com",
+    "street": "Via Reatina 35",
+    "town": "Cappelle dei Marsi",
+    "province": "AQ",
+    "vat_number": "IT02159690664",
+    "opening_hours": [
+      "Lunedì - venerdì: 9:30 - 13:00 e 14:30 - 17:30",
+      "Sabato: 9:30 - 13:00"
+    ],
+    "facebook": "https://www.facebook.com/people/Car-Style-Evolution/61550883380385/",
+    "instagram": "https://www.instagram.com/carstyle_evolution/"
+  },
+
+  "menu": [
+    {"label": "Home", "page": "index"},
+    {"label": "Chi siamo", "page": "chi-siamo"},
+    {"label": "I nostri servizi", "page": "i-nostri-servizi"},
+    {"label": "Progetti", "page": "progetti"},
+    {"label": "Contatti", "page": "contatti"}
+  ],
+
+  "pages": [
+    {
+      "file": "index",
+      "body": "home.html",
+      "menu_page": "index",
+      "title": "Car Style Evolution | Car wrapping, PPF e oscuramento vetri a Cappelle dei Marsi",
+      "description": "Car wrapping, pellicole protettive PPF e oscuramento vetri a Cappelle dei Marsi (AQ). Più di 10 anni di esperienza su auto, moto, camper, barche e locali commerciali."
+    },
+    {
+      "file": "chi-siamo",
+      "body": "chi-siamo.html",
+      "menu_page": "chi-siamo",
+      "title": "Chi siamo | Car Style Evolution",
+      "description": "Una passione diventata lavoro: più di 10 anni di esperienza in car wrapping, PPF e oscuramento vetri, con pellicole delle migliori marche."
+    },
+    {
+      "file": "i-nostri-servizi",
+      "body": "servizi.html",
+      "menu_page": "i-nostri-servizi",
+      "title": "I nostri servizi | Car Style Evolution",
+      "description": "Car wrapping, wrapping per interni, oscuramento vetri e fari, pellicole protettive PPF, vetrofanie e car detailing a Cappelle dei Marsi."
+    },
+    {
+      "file": "progetti",
+      "body": "progetti.html",
+      "menu_page": "progetti",
+      "title": "Progetti | Car Style Evolution",
+      "description": "Le foto dei nostri lavori: car wrapping, wrapping per interni, oscuramento vetri e pellicole protettive PPF."
+    },
+    {
+      "file": "contatti",
+      "body": "contatti.html",
+      "menu_page": "contatti",
+      "title": "Contatti | Car Style Evolution",
+      "description": "Telefono, WhatsApp, email e orari di Car Style Evolution, Via Reatina 35, Cappelle dei Marsi. Richiedi un preventivo gratuito."
+    },
+    {
+      "file": "404",
+      "body": "404.html",
+      "menu_page": "",
+      "title": "Pagina non trovata | Car Style Evolution",
+      "description": "La pagina cercata non esiste.",
+      "hidden": true
+    }
+  ],
+
+  "redirects": [
+    {"from": "-car-wrapping", "to": "car-wrapping"},
+    {"from": "wrapping-interior-", "to": "wrapping-interior-design"},
+    {"from": "adesivi-vetrofanie", "to": "adesivi"}
+  ]
+}

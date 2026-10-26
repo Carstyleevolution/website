@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_description }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ name }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ site_url }}/assets/img/pagine/home/hero-porsche.jpg">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/img/logo/favicon.png" type="image/png">
+  <link rel="preload" href="assets/font/open-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/stile.css">
+  <script src="assets/js/sito.js" defer></script>
+</head>
+<body>
+  <a class="salta-al-contenuto" href="#contenuto">Vai al contenuto</a>
+
+  <header class="testata">
+    <div class="contenitore testata__riga">
+      <a class="testata__logo" href="index.html">
+        <img src="assets/img/logo/logo.svg" alt="{{ name }} - Car Wrapping" width="667" height="247">
+      </a>
+      <div class="testata__azioni">
+        <div class="social">
+          <a href="{{ facebook }}" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/img/icone/facebook.svg" alt="" width="24" height="24"></a>
+          <a href="{{ instagram }}" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/img/icone/instagram.svg" alt="" width="24" height="24"></a>
+          <a href="{{ whatsapp_link }}" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/img/icone/whatsapp.svg" alt="" width="24" height="24"></a>
+        </div>
+        <a class="pulsante pulsante--chiaro" href="contatti.html#preventivo">Richiedi preventivo</a>
+      </div>
+      <button class="menu-mobile" type="button" aria-expanded="false" aria-controls="menu-principale">
+        <span class="menu-mobile__barre" aria-hidden="true"></span>
+        <span class="menu-mobile__testo">Menu</span>
+      </button>
+    </div>
+    <nav class="menu" id="menu-principale" aria-label="Menu principale">
+      <ul class="contenitore menu__lista">
+{{ menu }}
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenuto">
+{{ body }}
+  </main>
+
+  <footer class="piede">
+    <div class="contenitore">
+      <img class="piede__scudo" src="assets/img/logo/scudo.svg" alt="" width="90" height="108">
+      <div class="piede__colonne">
+        <div>
+          <h2 class="piede__titolo">Informazioni</h2>
+          <p>{{ name }}<br>{{ street }}<br>{{ town }} ({{ province }})</p>
+          <p>P. IVA {{ vat_number }}</p>
+        </div>
+        <div>
+          <h2 class="piede__titolo">Contatti</h2>
+          <p>Tel. <a href="tel:{{ phone_link }}">{{ phone_display }}</a></p>
+          <p><a href="{{ whatsapp_link }}" target="_blank" rel="noopener">Scrivici su WhatsApp</a></p>
+          <p><a href="mailto:{{ email }}">{{ email }}</a></p>
+        </div>
+        <div>
+          <h2 class="piede__titolo">Orari</h2>
+{{ hours }}
+        </div>
+        <div>
+          <h2 class="piede__titolo">Pagine</h2>
+          <ul class="piede__menu">
+{{ footer_menu }}
+          </ul>
+        </div>
+      </div>
+      <div class="social social--piede">
+        <a href="{{ facebook }}" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/img/icone/facebook.svg" alt="" width="32" height="32"></a>
+        <a href="{{ instagram }}" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/img/icone/instagram.svg" alt="" width="32" height="32"></a>
+        <a href="{{ whatsapp_link }}" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/img/icone/whatsapp.svg" alt="" width="32" height="32"></a>
+      </div>
+      <p class="piede__copyright">© {{ year }} {{ name }} · P. IVA {{ vat_number }}</p>
+    </div>
+  </footer>
+</body>
+</html>

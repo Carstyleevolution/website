@@ -1,0 +1,101 @@
+{
+  "categories": [
+    {
+      "slug": "car-wrapping",
+      "title": "Car wrapping",
+      "page_title": "Car wrapping: i nostri lavori | Car Style Evolution",
+      "description": "Foto dei nostri lavori di car wrapping: BMW X5, Audi A6, Porsche, Jeep, Mercedes, Harley-Davidson e altri veicoli.",
+      "cover": "progetti/car-wrapping/bmw-x5/mini/01.jpg",
+      "intro": [
+        "Cambi di colore, livree e personalizzazioni: ecco alcuni dei veicoli che abbiamo trasformato."
+      ],
+      "closing_note": "Lavorazioni in continuo aggiornamento…",
+      "projects": [
+        {"folder": "bmw-x5", "title": "BMW X5", "description": ["Da nero lucido a grigio opaco metallizzato"]},
+        {"folder": "audi-a6", "title": "Audi A6", "description": ["Da bianco lucido a grigio Nardò"]},
+        {"folder": "mini-cooper-countryman", "title": "Mini Cooper Countryman", "description": ["Da nero lucido a bianco perlato metallizzato lucido"]},
+        {"folder": "jeep-cherokee", "title": "Jeep Cherokee", "description": ["Da blu lucido a mimetica artico"]},
+        {"folder": "porsche-gt3-cup", "title": "Porsche GT3 Cup", "description": ["Livrea DB01"]},
+        {"folder": "harley-davidson-springer", "title": "Harley-Davidson Springer", "description": ["“Fiammante”"]},
+        {"folder": "jeep-wrangler-rubicon", "title": "Jeep Wrangler Rubicon", "description": []},
+        {"folder": "smart-450", "title": "Smart 450", "description": ["“La Tigre”"]},
+        {"folder": "porsche-cayman-s", "title": "Porsche Cayman S", "description": []},
+        {"folder": "mercedes-gle-53-amg", "title": "Mercedes GLE 53 AMG", "description": []},
+        {"folder": "mv-agusta", "title": "MV Agusta", "description": ["Wrapping in grigio Daytona opaco metallizzato"]}
+      ]
+    },
+    {
+      "slug": "wrapping-interior-design",
+      "title": "Wrapping interior design",
+      "page_title": "Wrapping interior design: i nostri lavori | Car Style Evolution",
+      "description": "Wrapping per porte, garage, mobili e stand, pellicole per vetri a effetto specchio e pellicola intelligente per la privacy.",
+      "cover": "progetti/wrapping-interior-design/porta-blindata/mini/01.jpg",
+      "intro": [
+        "Porte, mobili, vetrate e stand: il wrapping rinnova anche gli ambienti, senza lavori di ristrutturazione."
+      ],
+      "closing_note": "Lavorazioni in continuo aggiornamento…",
+      "projects": [
+        {"folder": "porta-sezionale-garage", "title": "Porta sezionale del garage", "description": ["Colorazione effetto legno"]},
+        {"folder": "porta-blindata", "title": "Wrapping porta blindata", "description": ["Colorazione verde british"]},
+        {"folder": "tavolo-ppf", "title": "Protezione tavolo con pellicola trasparente PPF", "description": ["Da opaco a lucido"]},
+        {
+          "folder": "pellicola-intelligente",
+          "title": "Oscuramento vetri per privacy e controllo solare",
+          "description": [
+            "La pellicola intelligente è una tecnologia innovativa che consente di trasformare il vetro da trasparente a opaco con il semplice tocco di un pulsante. Può essere applicata direttamente sulle superfici in vetro ed è ideale per il retrofit di pareti divisorie, finestre e porte in vetro esistenti.",
+            "Grazie alle sue caratteristiche di efficienza energetica, privacy e praticità, è la soluzione perfetta per qualsiasi spazio moderno."
+          ]
+        },
+        {"folder": "vetrata-effetto-specchio", "title": "Pellicola effetto specchio per la vetrata di una villa", "description": []},
+        {"folder": "allestimento-stand", "title": "Allestimento stand", "description": ["Wrapping grafico con pellicola sulle pareti dello stand"]}
+      ]
+    },
+    {
+      "slug": "oscuramento-vetri",
+      "title": "Oscuramento vetri",
+      "page_title": "Oscuramento vetri: i nostri lavori | Car Style Evolution",
+      "description": "Foto dei nostri lavori di oscuramento vetri auto con pellicole omologate.",
+      "cover": "progetti/oscuramento-vetri/lavori/mini/01.jpg",
+      "intro": [],
+      "closing_note": "Foto in continuo aggiornamento…",
+      "projects": [
+        {"folder": "lavori", "title": "", "description": []}
+      ]
+    },
+    {
+      "slug": "ppf",
+      "title": "PPF (Paint Protection Film)",
+      "page_title": "PPF, pellicola protettiva: i nostri lavori | Car Style Evolution",
+      "description": "Applicazioni di pellicola protettiva trasparente PPF su Tesla, Porsche, Alfa Romeo e BMW.",
+      "cover": "progetti/ppf/porsche-gt3-rs-weissach/mini/01.jpg",
+      "intro": [],
+      "closing_note": "Foto in continuo aggiornamento…",
+      "projects": [
+        {"folder": "tesla-model-y", "title": "Tesla Model Y 2025", "description": ["Applicazione pellicola protettiva trasparente opaca"]},
+        {"folder": "porsche-gt3-rs-weissach", "title": "Porsche GT3 RS Weissach", "description": ["Applicazione pellicola protettiva trasparente lucida da 200 micron"]},
+        {"folder": "alfa-romeo-giulia-veloce", "title": "Alfa Romeo Giulia Veloce", "description": ["Applicazione pellicola protettiva sulla parte frontale"]},
+        {"folder": "bmw-serie-3", "title": "BMW Serie 3", "description": ["Applicazione pellicola protettiva trasparente su tutta la parte anteriore", "Protezione del parabrezza con pellicola WPF"]}
+      ]
+    },
+    {
+      "slug": "adesivi",
+      "title": "Adesivi, vetrofanie e grafica",
+      "page_title": "Adesivi, vetrofanie e grafica | Car Style Evolution",
+      "description": "Adesivi, vetrofanie e grafiche personalizzate per vetrine, veicoli aziendali e locali.",
+      "cover": "pagine/servizi/vetrofanie-1.jpg",
+      "intro": [],
+      "closing_note": "",
+      "projects": []
+    },
+    {
+      "slug": "car-detailing",
+      "title": "Car detailing",
+      "page_title": "Car detailing | Car Style Evolution",
+      "description": "Car detailing: lucidatura, decontaminazione, protezione della carrozzeria e pulizia profonda degli interni.",
+      "cover": "pagine/servizi/car-detailing.jpg",
+      "intro": [],
+      "closing_note": "",
+      "projects": []
+    }
+  ]
+}

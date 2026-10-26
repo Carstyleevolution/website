@@ -1,0 +1,44 @@
+<section class="intestazione">
+  <div class="contenitore">
+    <h1 class="intestazione__titolo">Contatti</h1>
+    <p class="intestazione__sottotitolo">Chiamaci, scrivici su WhatsApp o passa a trovarci: il preventivo è gratuito.</p>
+  </div>
+</section>
+
+<section class="sezione">
+  <div class="contenitore">
+    <div class="recapiti">
+      <a class="recapito" href="tel:{{ phone_link }}">
+        <span class="recapito__etichetta">Telefono</span>
+        <span class="recapito__valore">{{ phone_display }}</span>
+      </a>
+      <a class="recapito" href="{{ whatsapp_link }}" target="_blank" rel="noopener">
+        <span class="recapito__etichetta">WhatsApp</span>
+        <span class="recapito__valore">Scrivici un messaggio</span>
+      </a>
+      <a class="recapito" href="mailto:{{ email }}">
+        <span class="recapito__etichetta">Email</span>
+        <span class="recapito__valore">{{ email }}</span>
+      </a>
+      <a class="recapito" href="{{ maps_link }}" target="_blank" rel="noopener">
+        <span class="recapito__etichetta">Indirizzo</span>
+        <span class="recapito__valore">{{ street }}, {{ town }} ({{ province }})</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ contact_block }}
+
+<section class="sezione sezione--scura">
+  <div class="contenitore">
+    <h2 class="titolo-sezione">Dove siamo</h2>
+    <div class="mappa" data-mappa data-indirizzo="{{ street }}, {{ town }} {{ province }}">
+      <p>La mappa è fornita da Google: per mostrarla, il tuo browser si collegherà ai server di Google.</p>
+      <div class="mappa__pulsanti">
+        <button class="pulsante" type="button" data-mostra-mappa>Mostra la mappa</button>
+        <a class="pulsante pulsante--contorno" href="{{ maps_link }}" target="_blank" rel="noopener">Apri in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>

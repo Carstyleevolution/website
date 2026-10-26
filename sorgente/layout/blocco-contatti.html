@@ -1,0 +1,44 @@
+<section class="sezione sezione--contatti" id="preventivo">
+  <div class="contenitore contatti">
+    <div class="contatti__info">
+      <h2 class="titolo-sezione titolo-sezione--sinistra">Contattaci</h2>
+      <p class="contatti__voce">
+        <strong>Dove siamo</strong><br>
+        {{ street }}, {{ town }} ({{ province }})
+      </p>
+      <p class="contatti__voce">
+        <strong>Telefono e WhatsApp</strong><br>
+        <a href="tel:{{ phone_link }}">{{ phone_display }}</a>
+      </p>
+      <p class="contatti__voce">
+        <strong>Email</strong><br>
+        <a href="mailto:{{ email }}">{{ email }}</a>
+      </p>
+      <div class="contatti__voce">
+        <strong>Orari e giorni di apertura</strong>
+{{ hours }}
+      </div>
+    </div>
+
+    <form class="modulo" data-modulo-contatti data-whatsapp="{{ whatsapp_number }}" data-email="{{ email }}">
+      <h3 class="modulo__titolo">Richiedi un preventivo gratuito</h3>
+      <label class="modulo__campo">
+        <span>Nome *</span>
+        <input type="text" name="nome" autocomplete="name" required>
+      </label>
+      <label class="modulo__campo">
+        <span>Telefono</span>
+        <input type="tel" name="telefono" autocomplete="tel">
+      </label>
+      <label class="modulo__campo">
+        <span>Messaggio *</span>
+        <textarea name="messaggio" rows="5" required placeholder="Che veicolo hai e che lavoro ti interessa?"></textarea>
+      </label>
+      <div class="modulo__pulsanti">
+        <button class="pulsante pulsante--whatsapp" type="submit" value="whatsapp">Invia su WhatsApp</button>
+        <button class="pulsante pulsante--contorno" type="submit" value="email">Invia per email</button>
+      </div>
+      <p class="modulo__nota">Il messaggio si apre in WhatsApp o nella tua app di posta: questo sito non salva nessun dato.</p>
+    </form>
+  </div>
+</section>
