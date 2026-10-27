@@ -272,6 +272,12 @@ def write_page(site, shared_values, file_name, title, description, body, menu_pa
     page_values["canonical_url"] = escape(canonical_url)
     page_values["menu"] = render_menu(site["menu"], menu_page)
     page_values["body"] = body
+    # Precarica soltanto la copertina presente nella pagina, senza richieste esterne.
+    hero = re.search(r"background-image:\s*url\('([^']+)'\)", body)
+    page_values["hero_preload"] = (
+        f'  <link rel="preload" as="image" href="{escape(hero.group(1))}" fetchpriority="high">'
+        if hero else ""
+    )
     page = fill_placeholders(layout, page_values, "layout/base.html")
     write_output(f"{file_name}.html", GENERATED_MARK + "\n" + page)
 
