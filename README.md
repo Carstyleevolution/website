@@ -60,7 +60,7 @@ Per vedere il sito sul tuo computer prima di pubblicarlo: `python3 -m http.serve
 
 ## 4. Da controllare prima di collegare il dominio
 
-- **Email.** Il vecchio sito riportava tre indirizzi diversi: `carstyle_evolution@gmail.com` (quello a cui portavano davvero i link), `carstyleevolution@gmail.com` e `carstyleevolution@mail.com`. Il nuovo sito usa ovunque il primo. Se è sbagliato, va cambiato solo in `sorgente/dati/sito.json`.
+- **Email.** L’indirizzo corretto, confermato dal titolare, è `carstyleevolution@gmail.com`. Il sito lo usa nei recapiti, nei link email e nei moduli contatti. Per aggiornarlo, modificare solo `sorgente/dati/sito.json`.
 - **Diritti sulle immagini.** Alcune foto sembrano prese da altri siti o generate con l'intelligenza artificiale: la vetrofania natalizia in home, la vetrofania "saldi" nella pagina servizi, la seconda foto dell'oscuramento vetri auto e le foto delle schede servizi in home (wrapping, oscuramento, PPF, custom, detailing). Se non sono vostre o non avete la licenza, conviene sostituirle con foto dei vostri lavori.
 - **Privacy.** Il sito non usa cookie e non raccoglie dati: il modulo apre WhatsApp o l'app di posta del visitatore, e la mappa di Google si carica solo se il visitatore la chiede. Se volete comunque un'informativa privacy, va aggiunta come pagina (vedi ARCHITETTURA.md).
 - **Recensioni.** Il riquadro recensioni del vecchio sito era un servizio di Aruba e non si può trasferire.
