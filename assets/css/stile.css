@@ -810,3 +810,29 @@ li { margin-bottom: 0.4em; }
 }
 
 }
+
+/* Recensioni Google: estratti e valutazione aggiornati manualmente. */
+.recensioni { background:var(--colore-sfondo-alternato); border-block:1px solid var(--colore-bordo); }
+.recensioni__intro { display:flex; align-items:center; justify-content:space-between; gap:32px; margin-bottom:32px; }
+.recensioni__intro h2 { font-size:clamp(1.65rem,3vw,2.5rem); line-height:1.2; margin:12px 0; }
+.recensioni__intro p:last-child { color:var(--colore-testo-tenue); }
+.recensioni__valutazione { display:grid; gap:4px; flex-shrink:0; text-align:center; color:inherit; text-decoration:none; padding:20px 30px; border:1px solid var(--colore-bordo); border-radius:var(--raggio); }
+.recensioni__valutazione strong { font-size:2.4rem; line-height:1.2; }
+.recensioni__valutazione>span:last-child { font-size:.8rem; color:var(--colore-testo-tenue); }
+.recensioni__stelle { color:#fbbc04; letter-spacing:.12em; font-size:1.15rem; margin:0; }
+.recensioni__griglia { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
+.recensioni__scheda { margin:0; padding:28px; background:var(--colore-pannello); border:1px solid var(--colore-bordo); border-radius:var(--raggio); display:flex; flex-direction:column; }
+.recensioni__scheda blockquote { margin:20px 0 24px; font-size:1.05rem; line-height:1.7; flex:1; }
+.recensioni__scheda blockquote p { margin:0; }
+.recensioni__scheda figcaption { display:grid; gap:4px; font-size:.85rem; }
+.recensioni__scheda figcaption span { color:var(--colore-testo-tenue); font-size:.75rem; }
+.recensioni__azioni { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-top:32px; }
+.recensioni__nota { text-align:center; color:var(--colore-testo-tenue); font-size:.75rem; margin:20px 0 0; }
+.recensioni__valutazione:focus-visible { outline:2px solid white; outline-offset:4px; }
+@media(max-width:760px) {
+  .recensioni__intro { flex-direction:column; align-items:flex-start; gap:16px; }
+  .recensioni__griglia { grid-template-columns:1fr; gap:16px; }
+  .recensioni__scheda { padding:24px; }
+  .recensioni__valutazione { width:100%; }
+  .recensioni__azioni .pulsante { width:100%; text-align:center; }
+}
