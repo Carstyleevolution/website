@@ -4,13 +4,14 @@
       "slug": "car-wrapping",
       "title": "Car wrapping",
       "page_title": "Car wrapping: i nostri lavori | Car Style Evolution",
-      "description": "Foto dei nostri lavori di car wrapping: BMW X5, Audi A6, Porsche, Jeep, Mercedes, Harley-Davidson e altri veicoli.",
+      "description": "Foto dei nostri lavori di car wrapping: Lancia Ypsilon Rally 4 HF, BMW X5, Audi A6, Porsche, Jeep, Mercedes, Harley-Davidson e altri veicoli.",
       "cover": "progetti/car-wrapping/bmw-x5/mini/01.jpg",
       "intro": [
         "Cambi di colore, livree e personalizzazioni: ecco alcuni dei veicoli che abbiamo trasformato."
       ],
       "closing_note": "Lavorazioni in continuo aggiornamento…",
       "projects": [
+        {"folder": "lancia-ypsilon-rally-4-hf", "title": "Lancia Ypsilon Rally 4 HF", "description": ["Livrea racing: stampa personalizzata e applicazione."]},
         {"folder": "bmw-x5", "title": "BMW X5", "description": ["Da nero lucido a grigio opaco metallizzato"]},
         {"folder": "audi-a6", "title": "Audi A6", "description": ["Da bianco lucido a grigio Nardò"]},
         {"folder": "mini-cooper-countryman", "title": "Mini Cooper Countryman", "description": ["Da nero lucido a bianco perlato metallizzato lucido"]},
