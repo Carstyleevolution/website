@@ -11,6 +11,7 @@
       ],
       "closing_note": "Lavorazioni in continuo aggiornamento…",
       "projects": [
+        {"folder": "mercedes-slk", "title": "Mercedes SLK", "description": ["Da grigio a grigio opaco metallizzato."]},
         {"folder": "lancia-ypsilon-rally-4-hf", "title": "Lancia Ypsilon Rally 4 HF", "description": ["Livrea racing: stampa personalizzata e applicazione."]},
         {"folder": "bmw-x5", "title": "BMW X5", "description": ["Da nero lucido a grigio opaco metallizzato"]},
         {"folder": "audi-a6", "title": "Audi A6", "description": ["Da bianco lucido a grigio Nardò"]},
