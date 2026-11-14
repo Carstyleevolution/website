@@ -98,6 +98,27 @@
       "intro": [],
       "closing_note": "",
       "projects": []
+    },
+    {
+      "slug": "allestimenti-veicoli-speciali",
+      "title": "Allestimenti veicoli speciali",
+      "page_title": "Allestimenti veicoli speciali | Car Style Evolution",
+      "description": "Allestimenti personalizzati per veicoli di soccorso, emergenza e vigilanza: dalla consulenza e progettazione alla realizzazione e assistenza post vendita.",
+      "cover": "progetti/allestimenti-veicoli-speciali/jeep-renegade-polizia-locale/mini/01.jpg",
+      "intro": [
+        "Allestimenti su misura per le esigenze di chi opera nel soccorso, nell’emergenza e nella vigilanza."
+      ],
+      "closing_note": "",
+      "projects": [
+        {
+          "folder": "jeep-renegade-polizia-locale",
+          "title": "Jeep Renegade – Polizia Locale",
+          "description": [
+            "Realizzazione della livrea Polizia Locale Abruzzo e allestimento con dispositivi di segnalazione luminosa.",
+            "Dal mezzo in lavorazione al risultato finale: i dettagli della personalizzazione e dell’allestimento."
+          ]
+        }
+      ]
     }
   ]
 }
