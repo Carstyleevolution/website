@@ -3,12 +3,11 @@
     {
       "slug": "car-wrapping",
       "title": "Car wrapping",
-      "page_title": "Car wrapping: i nostri lavori | Car Style Evolution",
-      "description": "Foto dei nostri lavori di car wrapping: Lancia Ypsilon Rally 4 HF, BMW X5, Audi A6, Porsche, Jeep, Mercedes, Harley-Davidson e altri veicoli.",
+      "page_title": "Car wrapping a Cappelle dei Marsi | Car Style Evolution",
+      "description": "Car wrapping a Cappelle dei Marsi (AQ): scopri i lavori realizzati da Car Style Evolution e richiedi un preventivo per il tuo progetto.",
       "cover": "progetti/car-wrapping/bmw-x5/mini/01.jpg",
-      "intro": [
-        "Cambi di colore, livree e personalizzazioni: ecco alcuni dei veicoli che abbiamo trasformato."
-      ],
+      "intro": ["Car wrapping da Car Style Evolution, in Via Reatina 35 a Cappelle dei Marsi (AQ).", "Personalizziamo auto e altri veicoli con cambi di colore, finiture e livree su misura. In questa galleria puoi confrontare alcuni lavori realizzati e trovare idee per il tuo progetto."],
+      "service_anchor": "car-wrapping",
       "closing_note": "Lavorazioni in continuo aggiornamento…",
       "projects": [
         {"folder": "mercedes-slk", "title": "Mercedes SLK", "description": ["Da grigio a grigio opaco metallizzato."]},
@@ -28,13 +27,12 @@
     },
     {
       "slug": "wrapping-interior-design",
-      "title": "Wrapping interior design",
-      "page_title": "Wrapping interior design: i nostri lavori | Car Style Evolution",
-      "description": "Wrapping per porte, garage, mobili e stand, pellicole per vetri a effetto specchio e pellicola intelligente per la privacy.",
+      "title": "Pellicole architetturali e wrapping interior design",
+      "page_title": "Pellicole architetturali a Cappelle dei Marsi | Car Style Evolution",
+      "description": "Pellicole architetturali a Cappelle dei Marsi (AQ): scopri i lavori realizzati da Car Style Evolution e richiedi un preventivo per il tuo progetto.",
       "cover": "progetti/wrapping-interior-design/porta-blindata/mini/01.jpg",
-      "intro": [
-        "Porte, mobili, vetrate e stand: il wrapping rinnova anche gli ambienti, senza lavori di ristrutturazione."
-      ],
+      "intro": ["Pellicole architetturali da Car Style Evolution, in Via Reatina 35 a Cappelle dei Marsi (AQ).", "Le pellicole architetturali permettono di rinnovare mobili, porte e superfici interne. Realizziamo anche applicazioni su vetrate per privacy e controllo solare: scopri i progetti e le finiture della galleria."],
+      "service_anchor": "interior-design",
       "closing_note": "Lavorazioni in continuo aggiornamento…",
       "projects": [
         {"folder": "porta-sezionale-garage", "title": "Porta sezionale del garage", "description": ["Colorazione effetto legno"]},
@@ -55,10 +53,11 @@
     {
       "slug": "oscuramento-vetri",
       "title": "Oscuramento vetri",
-      "page_title": "Oscuramento vetri: i nostri lavori | Car Style Evolution",
-      "description": "Foto dei nostri lavori di oscuramento vetri auto con pellicole omologate.",
+      "page_title": "Oscuramento vetri auto a Cappelle dei Marsi | Car Style Evolution",
+      "description": "Oscuramento vetri auto a Cappelle dei Marsi (AQ): scopri i lavori realizzati da Car Style Evolution e richiedi un preventivo per il tuo progetto.",
       "cover": "progetti/oscuramento-vetri/lavori/mini/01.jpg",
-      "intro": [],
+      "intro": ["Oscuramento vetri auto da Car Style Evolution, in Via Reatina 35 a Cappelle dei Marsi (AQ).", "Applichiamo pellicole oscuranti per i vetri auto, valutando tonalità e caratteristiche in base al veicolo e alle tue esigenze. Guarda alcuni esempi dei nostri lavori e contattaci per un preventivo."],
+      "service_anchor": "oscuramento-auto",
       "closing_note": "Foto in continuo aggiornamento…",
       "projects": [
         {"folder": "lavori", "title": "", "description": []}
@@ -67,10 +66,11 @@
     {
       "slug": "ppf",
       "title": "PPF (Paint Protection Film)",
-      "page_title": "PPF, pellicola protettiva: i nostri lavori | Car Style Evolution",
-      "description": "Applicazioni di pellicola protettiva trasparente PPF su Tesla, Porsche, Alfa Romeo e BMW.",
+      "page_title": "Pellicola protettiva PPF a Cappelle dei Marsi | Car Style Evolution",
+      "description": "Pellicola protettiva PPF a Cappelle dei Marsi (AQ): scopri i lavori realizzati da Car Style Evolution e richiedi un preventivo per il tuo progetto.",
       "cover": "progetti/ppf/porsche-gt3-rs-weissach/mini/01.jpg",
-      "intro": [],
+      "intro": ["Pellicola protettiva PPF da Car Style Evolution, in Via Reatina 35 a Cappelle dei Marsi (AQ).", "Il PPF (Paint Protection Film) è una pellicola per la protezione della carrozzeria. Valutiamo con te le superfici da rivestire e la finitura: qui trovi applicazioni parziali e complete, lucide e opache."],
+      "service_anchor": "ppf",
       "closing_note": "Foto in continuo aggiornamento…",
       "projects": [
         {"folder": "tesla-model-y", "title": "Tesla Model Y 2025", "description": ["Applicazione pellicola protettiva trasparente opaca"]},
@@ -102,12 +102,11 @@
     {
       "slug": "allestimenti-veicoli-speciali",
       "title": "Allestimenti veicoli speciali",
-      "page_title": "Allestimenti veicoli speciali | Car Style Evolution",
-      "description": "Allestimenti personalizzati per veicoli di soccorso, emergenza e vigilanza: dalla consulenza e progettazione alla realizzazione e assistenza post vendita.",
+      "page_title": "Allestimenti veicoli speciali a Cappelle dei Marsi | Car Style Evolution",
+      "description": "Allestimenti veicoli speciali a Cappelle dei Marsi (AQ): scopri i lavori realizzati da Car Style Evolution e richiedi un preventivo per il tuo progetto.",
       "cover": "progetti/allestimenti-veicoli-speciali/jeep-renegade-polizia-locale/mini/01.jpg",
-      "intro": [
-        "Allestimenti su misura per le esigenze di chi opera nel soccorso, nell’emergenza e nella vigilanza."
-      ],
+      "intro": ["Allestimenti veicoli speciali da Car Style Evolution, in Via Reatina 35 a Cappelle dei Marsi (AQ).", "Progettiamo allestimenti su misura per soccorso, emergenza e vigilanza, dalla consulenza iniziale alla realizzazione e all’assistenza post vendita. Qui trovi un esempio di livrea e allestimento per la Polizia Locale."],
+      "service_anchor": "allestimenti-veicoli-speciali",
       "closing_note": "",
       "projects": [
         {

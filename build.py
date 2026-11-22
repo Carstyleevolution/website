@@ -198,6 +198,8 @@ def render_category_body(category):
         for project in titled_projects:
             parts.append(f'      <li><a href="#{project["folder"]}">{escape(project["title"])}</a></li>')
         parts.append("    </ul>")
+    if category.get("service_anchor"):
+        parts.append(f'    <p><a href="i-nostri-servizi.html#{escape(category["service_anchor"])}">Scopri il servizio</a> · <a href="contatti.html#preventivo">Richiedi un preventivo</a></p>')
     parts += ["  </div>", "</section>", ""]
 
     if not category["projects"]:
@@ -260,16 +262,39 @@ def render_category_cards(categories):
 # Writing pages
 # ---------------------------------------------------------------------------
 
+def page_url(site, name):
+    base = site["site_url"].rstrip("/")
+    return base + "/" if name == "index" else f"{base}/{name}.html"
+
+
+def structured_data(site):
+    business = site["business"]
+    base = site["site_url"].rstrip("/")
+    data = {
+        "@context": "https://schema.org",
+        "@type": "AutomotiveBusiness",
+        "@id": base + "/#attivita",
+        "name": business["name"], "url": base + "/",
+        "telephone": business["phone_link"], "email": business["email"],
+        "image": base + "/assets/img/pagine/home/hero-porsche.jpg",
+        "logo": base + "/assets/img/logo/logo.svg",
+        "address": {"@type": "PostalAddress", "streetAddress": business["street"],
+                    "addressLocality": business["town"], "addressRegion": business["province"],
+                    "addressCountry": "IT"},
+        "sameAs": [business["facebook"], business["instagram"]],
+    }
+    return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False).replace("<", "\\u003c") + '</script>'
+
+
 def write_page(site, shared_values, file_name, title, description, body, menu_page):
     layout = read_source("layout", "base.html")
-    if file_name == "index":
-        canonical_url = site["site_url"] + "/"
-    else:
-        canonical_url = f"{site['site_url']}/{file_name}"
+    canonical_url = page_url(site, file_name)
     page_values = dict(shared_values)
     page_values["page_title"] = escape(title)
     page_values["page_description"] = escape(description)
     page_values["canonical_url"] = escape(canonical_url)
+    page_values["seo_data"] = structured_data(site) if file_name == "index" else ""
+    page_values["robots_meta"] = '<meta name="robots" content="noindex, follow">' if file_name == "404" else ""
     page_values["menu"] = render_menu(site["menu"], menu_page)
     page_values["body"] = body
     # Precarica soltanto la copertina presente nella pagina, senza richieste esterne.
@@ -296,11 +321,10 @@ def write_redirect(old_name, new_name):
 
 
 def write_sitemap_and_robots(site, page_names):
-    today = datetime.date.today().isoformat()
     entries = []
     for name in page_names:
-        address = site["site_url"] + "/" if name == "index" else f"{site['site_url']}/{name}"
-        entries.append(f"  <url>\n    <loc>{escape(address)}</loc>\n    <lastmod>{today}</lastmod>\n  </url>")
+        address = page_url(site, name)
+        entries.append(f"  <url>\n    <loc>{escape(address)}</loc>\n  </url>")
     sitemap = ('<?xml version="1.0" encoding="UTF-8"?>\n'
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                + "\n".join(entries) + "\n</urlset>\n")
