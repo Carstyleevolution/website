@@ -293,7 +293,38 @@ def write_page(site, shared_values, file_name, title, description, body, menu_pa
     page_values["page_title"] = escape(title)
     page_values["page_description"] = escape(description)
     page_values["canonical_url"] = escape(canonical_url)
+    page_values["page_image"] = escape(site["site_url"].rstrip("/") + "/assets/img/pagine/home/hero-porsche.jpg")
     page_values["seo_data"] = structured_data(site) if file_name == "index" else ""
+    if file_name == "index":
+        homepage = {
+            "@context": "https://schema.org", "@type": "WebPage",
+            "@id": canonical_url + "#pagina", "url": canonical_url, "name": title,
+            "about": {"@id": canonical_url + "#attivita"},
+            "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "contentUrl": site["site_url"].rstrip("/") + "/assets/img/pagine/home/hero-porsche.jpg",
+                "width": 1078, "height": 742,
+                "caption": "Porsche nella copertina di Car Style Evolution"
+            }
+        }
+        page_values["seo_data"] += '<script type="application/ld+json">' + json.dumps(homepage, ensure_ascii=False).replace("<", "\\u003c") + '</script>'
+    if file_name == "chi-siamo":
+        image_url = site["site_url"].rstrip("/") + "/assets/img/pagine/chi-siamo/chi-siamo.jpg"
+        page_values["page_image"] = escape(image_url)
+        about = {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "@id": canonical_url + "#pagina",
+            "url": canonical_url,
+            "name": title,
+            "about": {"@id": site["site_url"].rstrip("/") + "/#attivita"},
+            "primaryImageOfPage": {
+                "@type": "ImageObject", "contentUrl": image_url,
+                "width": 675, "height": 1200,
+                "caption": "Lavorazione su una Lamborghini nel laboratorio di Car Style Evolution"
+            },
+        }
+        page_values["seo_data"] = '<script type="application/ld+json">' + json.dumps(about, ensure_ascii=False).replace("<", "\\u003c") + '</script>'
     page_values["robots_meta"] = '<meta name="robots" content="noindex, follow">' if file_name == "404" else ""
     page_values["menu"] = render_menu(site["menu"], menu_page)
     page_values["body"] = body
